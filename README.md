@@ -52,12 +52,13 @@ uvicorn app:app --reload
 ```
 
 ### Project Structure
+```plaintext
 user-auth-app/
 ├── app.py             # FastAPI app and routes
-├── database.py        # Database setup
-├── models.py          # User model
-├── templates/         # HTML templates
+├── database.py        # SQLite database configuration
+├── models.py          # SQLAlchemy user model
+├── templates/         # Jinja2 HTML templates
 │   ├── base.html
 │   ├── register.html
 │   └── login.html
-└── users.db           # SQLite database
+└── users.db           # SQLite database (auto-generated)
